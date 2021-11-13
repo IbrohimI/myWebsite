@@ -1,0 +1,37 @@
+#skills-animation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    /* 
+    background-color: white;
+    transform: rotateY(0deg);
+    animation: textAnimation 5s ease-in-out forwards;
+    */
+}
+
+
+#skills-animation > img {
+    position: relative;
+    opacity: 0;
+    transform: rotateY(0deg);
+    animation: textAnimation 5s ease-in-out forwards;
+}
+
+@keyframes textAnimation {
+    to {
+        top: 0;
+        left: 0;
+        transform: rotateY(360deg);
+        opacity: 1;
+    }
+}
+
+img {
+    margin: 10px;
+    padding: 10px;
+}
+
+

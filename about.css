@@ -1,0 +1,28 @@
+body {
+    overflow: hidden;
+}
+
+#text-animation {
+    font : 30px sans-serif;
+    color : white;
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%, -50%);
+    width : 80%;
+    text-align: center;
+}
+
+#text-animation span {
+    position: relative;
+    opacity: 0;
+    animation: textAnimation 5s ease-in-out forwards;
+}
+
+@keyframes textAnimation {
+    to {
+        top: 0;
+        left: 0;
+        opacity: 1;
+    }
+}

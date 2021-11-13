@@ -1,0 +1,97 @@
+
+.carousel #imageId {
+    border-radius: 100%;
+    height: 180px;
+}
+
+.carousel #githubId {
+    border-radius: 100%;
+    height: 140px;
+}
+
+
+#contact-animation #email {
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+}
+
+#contact-animation #tel {
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+}
+
+button {
+    padding: 20px;
+    border-radius: 20%;
+    margin: 10px;
+    background-color: rgb(240, 188, 17);
+}
+
+.scene {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 50%;
+    height: 30%;
+    perspective: 800px;
+    margin: 150 auto;
+  }
+
+  
+  .carousel {
+    display: flex;
+    justify-content: space-around;
+    font-size: 4em;
+    width: 12em;
+    transform-style: preserve-3d;
+    text-align: center;
+    margin-top: 5%;
+    transform: rotateX(-25deg);
+
+  }
+  .scene{
+    position: relative;
+    opacity: 0;
+    transform: scale(6);
+    animation: moving 3s ease-in-out forwards;
+  }
+  @keyframes moving {
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+  .carousel_cell {
+    width: 2em;
+    height: 2em;
+    background: transparent;
+    text-align: center;
+    line-height: 2em;
+    position: absolute;
+  
+  }
+
+  #emailId{
+    width: 15em;
+    color: white;
+    font: 20px sans-serif;
+    text-align: center;
+  }
+  #telId{
+    width: 10em;
+    color: white;
+    font: 30px sans-serif;
+  }
+
+
+
+  .carousel_cell:nth-child(1) { transform: rotateY( 0deg) translateZ(4em); }
+  .carousel_cell:nth-child(2) { transform: rotateY( 90deg) translateZ(12em); }
+  .carousel_cell:nth-child(3) { transform: rotateY( 180deg) translateZ(8em); }
+  .carousel_cell:nth-child(4) { transform: rotateY( 270deg) translateZ(4em); }
+
+
+
